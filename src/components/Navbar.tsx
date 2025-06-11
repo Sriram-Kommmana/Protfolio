@@ -14,8 +14,6 @@ const Navbar: React.FunctionComponent= () => {
           </li>
         ))}
       </ul>
-
-        
     </nav>
   )
 };
