@@ -184,3 +184,10 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-size: 9vw;
+  font-weight: 400;
+  font-style: normal;
+}
