@@ -3,7 +3,7 @@ import { HyperText } from "@/components/magicui/hyper-text";
 
 const Navbar: React.FunctionComponent= () => {
   return(
-    <nav className='fixed top-0 left-0 w-full px-60 bg-black text-white p-4 z-40 flex justify-between items-baseline'>
+    <nav className='fixed top-0 left-0 w-full px-60 bg-[rgba(0,0,0,0.75)] backdrop-blur-md text-white p-2 z-60 flex justify-between items-baseline'>
         <HyperText className='text-3xl'>&lt;Sriram/&gt;</HyperText>
         <ul className='flex space-x-4 text-white'>
         {['About', 'Projects', 'Tech Stack', 'Contact'].map((item, index) => (
