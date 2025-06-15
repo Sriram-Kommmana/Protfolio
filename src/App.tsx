@@ -20,36 +20,32 @@ function App() {
   }, []);
 
   return (
-    <main className='w-screen h-screen overflow-x-hidden overflow-y-scroll bg-black relative'>
-
-      {/* Background Particles fixed for entire page */}
-      <div className='fixed inset-0 z-0 h-full w-full'>
-        <Particles />
-      </div>
-
-      {/* Content */}
-      <div className='relative z-10 w-screen flex flex-col items-center'>
-
-        <Navbar />
-
-        {/* Hero Section (Hello) */}
-        <section className='h-screen w-screen flex justify-center items-center'>
-          <Hello />
-        </section>
-
-        {/* Skills Section */}
-        <section className='h-screen w-screen flex justify-center items-center'>
+      <div className='bg-black'>
+        <div style={{ width: '100%', height: '100vh', position: 'fixed' }}>
+          <Particles
+            particleColors={['#ffffff', '#ffffff']}
+            particleCount={500}
+            particleSpread={5}
+            speed={0.1}
+            particleBaseSize={33}
+            moveParticlesOnHover={false}
+            alphaParticles={false}
+            disableRotation={false}
+          />
+        </div>
+        <div className='relative'>
+          <div className='sticky top-0 z-50'>
+            <Navbar />
+          </div>
+          <Hello  />
           <Skills />
-        </section>
-
+        </div>
+        <AnimatePresence mode='wait'>
+          {isLoading && <Preloader />}
+        </AnimatePresence>
       </div>
 
-      {/* Preloader */}
-      <AnimatePresence mode='wait'>
-        {isLoading && <Preloader />}
-      </AnimatePresence>
-      
-    </main>
+
   );
 }
 

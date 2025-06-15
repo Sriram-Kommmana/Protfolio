@@ -8,7 +8,7 @@ const Skills: React.FunctionComponent= () => {
         pauseOnHover
         speed={50}
         gradient={false}
-        className="text-black !text-[40px] font-bold bg-white h-[50px] russo-one-regular"
+        className="text-black !text-[40px] font-bold bg-white h-[50px] russo-one-regular overflow-hidden"
       >
         KOMMANA SRIRAM &bull;&nbsp;KOMMANA SRIRAM &bull;&nbsp;KOMMANA SRIRAM &bull;&nbsp;KOMMANA SRIRAM &bull;&nbsp;
       </Marquee>
