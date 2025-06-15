@@ -6,6 +6,8 @@ import Particles from './blocks/Backgrounds/Particles/Particles';
 import Navbar from './components/Navbar';
 import Hello from './components/Hello';
 import Skills from './components/Skills';
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +22,7 @@ function App() {
   }, []);
 
   return (
-      <div className='bg-black'>
+      <div className='bg-black cursor-none'>
         <div style={{ width: '100%', height: '100vh', position: 'fixed' }}>
           <Particles
             particleColors={['#ffffff', '#ffffff']}
@@ -43,6 +45,7 @@ function App() {
         <AnimatePresence mode='wait'>
           {isLoading && <Preloader />}
         </AnimatePresence>
+        <SmoothCursor />
       </div>
 
 
