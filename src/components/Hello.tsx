@@ -12,7 +12,11 @@ const Hello: React.FunctionComponent= () => {
         <h1 className='absolute top-0 left-0 text-transparent russo-one-regular z-40' style={{ WebkitTextStroke: '2px white' }}>HI, I'M SRIRAM</h1>
       </div>
       <div className="relative flex justify-around w-full">
-        <div className="flex-1 text-white"><h1>HII</h1></div>
+        <div className="flex-1 text-white">
+            <div className="h-[33%]"></div>
+            <div className="h-[33%]"></div>
+            <div className="h-[33%] flex justify-end"><h2 className='russo-one-regular !text-2xl text-center'>Building seamless stories<br/>in code.</h2></div>
+        </div>
         <div className="flex-1">
           <img
             src={hover ? two : one}
@@ -22,7 +26,13 @@ const Hello: React.FunctionComponent= () => {
             className='h-[calc(100vh-4rem)] max-w-[90vw] object-contain flex-1'
           />
         </div>
-        <div className="flex-1"></div>
+        <div className="flex-1 text-white">
+            <div className="h-[33%] relative">
+              <h2 className='absolute bottom-0 left-0 russo-one-regular !text-3xl text-center'>FULL STACK<br/>DEVELOPER<br/> & DESIGNER</h2>
+            </div>
+            <div className="h-[33%]"></div>
+            <div className="h-[33%]"><h2 className='russo-one-regular !text-lg'>// Based in India</h2></div>
+        </div>
       </div>
     </div>
   )
