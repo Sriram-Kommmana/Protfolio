@@ -7,3 +7,17 @@
   font-weight: 400;
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background:rgb(255, 255, 255);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(31, 61, 77);
+}

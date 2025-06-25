@@ -28,10 +28,10 @@ const Hello: React.FunctionComponent= () => {
         </div>
         <div className="flex-1 text-white">
             <div className="h-[33%] relative">
-              <h2 className='absolute bottom-0 left-0 russo-one-regular !text-3xl text-center'>FULL STACK<br/>DEVELOPER<br/> & DESIGNER</h2>
+              <h2 className='absolute bottom-0 left-0 russo-one-regular !text-3xl text-center'>FULL-STACK<br/>DEVELOPER<br/> & DESIGNER</h2>
             </div>
             <div className="h-[33%]"></div>
-            <div className="h-[33%]"><h2 className='russo-one-regular !text-lg'>// Based in India</h2></div>
+            <div className="h-[33%]"><h2 className='russo-one-regular !text-2xl'>// Based in India</h2></div>
         </div>
       </div>
     </div>
