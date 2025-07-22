@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 import Hello from './components/Hello';
 import Skills from './components/Skills';
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
-
+import { ReactLenis } from 'lenis/react'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,6 +22,8 @@ function App() {
   }, []);
 
   return (
+    <ReactLenis root >
+
       <div className='bg-black cursor-none'>
         <div style={{ width: '100%', height: '100vh', position: 'fixed' }}>
           <Particles
@@ -47,6 +49,7 @@ function App() {
         </AnimatePresence>
         <SmoothCursor />
       </div>
+    </ReactLenis>
 
 
   );
